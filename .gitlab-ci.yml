@@ -1,0 +1,13 @@
+before_script:
+  - python -V
+  - pip install flake8
+
+test:python2:
+  image: python:2
+  script:
+  - flake8 *.py
+
+test:python3:
+  image: python:3
+  script:
+  - flake8 *.py
